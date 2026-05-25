@@ -1,0 +1,15 @@
+name: Operacao Cofre Digital
+
+on:
+   workflow_dispatch:
+
+jobs:
+  teste:
+     runs-on: ubuntu-latest
+
+     steps:
+        - name: Inicio
+          run: echo "Executando teste"
+
+        - name: Utilizando Secret
+          run: echo "Senha armazenada = ${{ secrets.SENHA_EMPRESA }}
